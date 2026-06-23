@@ -1,6 +1,6 @@
 # skills
 
-Claude Code skills collection.
+A collection of skills for AI coding assistants — each skill teaches an assistant a specific workflow or capability.
 
 ## Available skills
 
@@ -10,10 +10,10 @@ Claude Code skills collection.
 
 ## How to install a skill
 
-Copy the skill directory into your Claude Code user skills folder:
+Copy the skill directory into your assistant's skills folder and reference it in your configuration. For example:
 
 ```bash
-cp -r visual-docs ~/.claude/skills/
+cp -r visual-docs ~/.your-assistant/skills/
 ```
 
-Or reference the skill directory directly in your Claude Code settings.
+Refer to your AI assistant's documentation for the exact installation path.

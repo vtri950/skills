@@ -1,6 +1,6 @@
 # visual-docs skill
 
-This skill teaches your AI agent to author and convert documentation as rich
+Teaches your AI coding assistant to author and convert documentation as rich
 `.mdx` files for **planview** — a local web viewer that renders them in your
 browser with interactive components, inline comments, and PDF export.
 
@@ -36,7 +36,7 @@ Then open [http://localhost:3000](http://localhost:3000).
 
 ## What this skill does
 
-Once installed, your agent gains two capabilities:
+Once installed, your assistant gains two capabilities:
 
 ### `/visual-docs <topic>`
 Author a new `.mdx` document from scratch using planview components and save
@@ -44,8 +44,7 @@ it to your docs directory.
 
 ### `/visual-docs convert <file.md>`
 Convert an existing Markdown file to planview-compatible MDX — replaces
-markdown tables, blockquotes, and other unsupported syntax with the correct
-components automatically.
+tables, blockquotes, and ordered lists with the appropriate components.
 
 ---
 
@@ -55,21 +54,22 @@ components automatically.
 |-----------|---------|
 | `<Callout type="info\|warning\|tip\|danger">` | Notes, warnings, tips |
 | `<Tabs labels={["A","B"]}><Tab>...</Tab></Tabs>` | Grouped options or categories |
-| `<Steps><Step title="...">...</Step></Steps>` | Ordered procedures |
-| `<Badge variant="success\|warning\|error\|info">` | Status labels |
-| `<CodeBlock language="ts" title="file.ts">` | Code with syntax highlighting |
-| `<ModelGuide />` | Model/tier comparison tables |
-| `<DelegationGuide />` | Delegation ownership charts |
-| ` ```mermaid ` fenced block | Flow and sequence diagrams |
+| `<Steps><Step n={1}>...</Step></Steps>` | Ordered procedures |
+| `<Badge color="blue\|green\|amber\|red\|gray\|purple">` | Inline status labels |
+| `<CodeBlock language="ts">` | Copy-button prompt or command templates |
+| `<ModelGuide />` | Model/tier comparison |
+| `<DelegationGuide />` | Delegation ownership chart |
+| ` ```mermaid ` fenced block | Flow and sequence diagrams (click to expand, scroll to zoom) |
+| ` ```lang ` fenced block | Syntax-highlighted code (`github-dark-dimmed` theme) |
 | `- [ ]` / `- [x]` | GFM task lists |
 
-> Narrow markdown tables (≤4 cols, short cells) are fine. Wide or semantic tables (model comparisons, delegation charts, step sequences) should use a component instead.
+> Narrow markdown tables (≤4 columns, short cells) render with full styling. Wide or semantic tables should use a component instead.
 
 ---
 
 ## Bundled reference file
 
-The skill ships one reference file the agent reads before writing any `.mdx`:
+The skill ships one reference file the assistant reads before writing any `.mdx`:
 
 | File | Purpose |
 |------|---------|
@@ -79,13 +79,13 @@ The skill ships one reference file the agent reads before writing any `.mdx`:
 
 ## Workflow
 
-1. Start planview:
+1. Start planview pointing at your docs directory:
    ```bash
    npx @vtripathi/planview@latest --dir ./docs
    ```
-2. Ask your agent:
-   - `/visual-docs my new feature` — author from scratch
-   - `/visual-docs convert docs/my-doc.md` — convert existing file
-3. The agent writes the `.mdx` file and gives you the preview URL.
-4. Open the URL, click headings to comment, use the side drawer for git history.
+2. Ask your assistant:
+   - `/visual-docs my new feature` — author a doc from scratch
+   - `/visual-docs convert docs/my-doc.md` — convert an existing file
+3. The assistant writes the `.mdx` file and gives you the preview URL.
+4. Open the URL, click any heading to add a note, use the side drawer for git history.
 5. Use the "Export HTML" button to save as PDF.
