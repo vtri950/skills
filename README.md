@@ -7,6 +7,8 @@ A collection of skills for AI coding assistants — each skill teaches an assist
 | Skill | Description |
 |-------|-------------|
 | [visual-docs](./visual-docs/) | Author and convert documentation to rich MDX files viewable locally with [planview](https://github.com/vtri950/planview) |
+| [make-interfaces-feel-better](./jakubkrehel/make-interfaces-feel-better/) | UI polish pass after frontend work — spacing, hit areas, motion, typography, icons |
+| [humanizer](./blader/humanizer/) | Rewrite AI-sounding prose so it reads like the writer, without changing facts |
 
 ### Compound Engineering (`compound-engineering/`)
 
@@ -39,6 +41,10 @@ Refer to your AI assistant's documentation for the exact installation path.
 ```
 skills/                          # repo root
 ├── visual-docs/                 # standalone skill
+├── jakubkrehel/                 # jakubkrehel source — 1 skill segregated by origin
+│   └── make-interfaces-feel-better/
+├── blader/                      # blader source — 1 skill segregated by origin
+│   └── humanizer/
 └── compound-engineering/        # EveryInc source — 6 skills segregated by origin
     ├── ce-brainstorm/
     ├── ce-plan/
@@ -53,6 +59,10 @@ Add future sources as sibling dirs (e.g. `acme-corp/`, `my-skills/`) to keep ori
 ## Attribution
 
 `compound-engineering/*` (`ce-brainstorm`, `ce-plan`, `ce-work`, `ce-compound`, `ce-code-review`, `ce-debug`) are sourced from [EveryInc/compound-engineering-plugin](https://github.com/EveryInc/compound-engineering-plugin) (MIT, © Every Inc.) at `v3.24.0`. Original `SKILL.md` and `references/` are preserved unchanged under `compound-engineering/`.
+
+`jakubkrehel/make-interfaces-feel-better` is sourced from [jakubkrehel/make-interfaces-feel-better](https://github.com/jakubkrehel/make-interfaces-feel-better) (MIT) at `35545ea` (2026-08-29). Original `SKILL.md`, reference `.md` files, and `agents/` are preserved unchanged.
+
+`blader/humanizer` is sourced from [blader/humanizer](https://github.com/blader/humanizer) (MIT) at `9862685` (2026-09-06). Original `SKILL.md` (`v3.0.0`) is preserved unchanged.
 
 ## How these skills compound
 
