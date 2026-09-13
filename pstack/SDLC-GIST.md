@@ -1,5 +1,6 @@
 # pstack Pt.1 + Pt.2 — SDLC notes worth keeping (not skills)
 
+> My own distilled notes. The `pstack/` skills themselves are the author's own words, lifted verbatim — this gist is the separate takeaway sheet.
 Source: lauren (@poteto) — "The Complete Guide to pstack" Pt.1 (verification) + Pt.2 (research/planning/prototyping/architecture).
 Distilled to judgments and workflow knowledge that don't warrant a skill file but change how you run SDLC with agents.
 

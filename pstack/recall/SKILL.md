@@ -1,26 +1,22 @@
 ---
 name: recall
 description: |
-  Pull what you and your agents already figured out in earlier chats into this one. Use at the start of any session that continues past work, so a fresh agent doesn't rebuild context from zero.
+  The author's /recall, verbatim: pull recent context from chat history so fresh agents don't start from zero.
 license: MIT
 metadata:
-  version: "1.0.0"
+  version: "2.0.0"
   source: "https://x.com/poteto/status/2097732320606507506"
-  origin: "pstack Pt.2 — /recall (lauren / @poteto)"
+  origin: "pstack Pt.2 — lifted verbatim from lauren / @poteto (light markdown formatting only)"
 ---
 
-# /recall — don't start from zero
+# Learning from history
 
-Every new chat wipes the rich context your last agent built. Past transcripts are the gold mine. Type this:
+> Lifted verbatim from [The Complete Guide to pstack Pt. 2](https://x.com/poteto/status/2097732320606507506).
 
-> `/recall the work i did yesterday on virtualization and then read this bug report on slack`
+Many of my projects span multiple conversations. For example, a few months ago I was working on fixing virtualization bugs and perf issues that people were reporting in Cursor. I realized that every time I started a new chat I had to basically start over with building up the rich context my agent had before when it was solving a similar problem.
 
-## What the agent does
+What I realized is that your past transcripts are often a gold mine for rich context. pstack ships with the `/recall` skill to pull your recent context from chat history, so even fresh agents have the right context they need to get back to a good state.
 
-1. Summarizes the relevant past work: what was tried, what failed, numbers measured, subsystem briefs.
-2. States what's still open vs settled.
-3. Applies it to the new task in the same turn.
+`/recall the work i did yesterday on virtualization and then read this bug report on slack`
 
-## Be specific about scope
-
-`yesterday`, `past 7 days`, `on virtualization` — "recall everything" returns mush. Check your durable learnings (`docs/solutions/`) first; `/recall` is for the session-level detail those don't hold.
+Using `/teach`, `/recall`, `/how`, and `/why` are how I keep my own mental models of the codebase up to date, compressed into a form I can easily understand and remember. And, it helps agents too!

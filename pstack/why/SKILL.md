@@ -1,31 +1,18 @@
 ---
 name: why
 description: |
-  Find out why the code is the way it is — the decision, ticket, or incident behind it. Use when you hit an odd choice ("why are we still on X?") and want the cited history instead of a plausible-sounding story.
+  The author's /why, verbatim: investigate motivation and intent via historical evidence across git, PRs, tickets, docs, Slack, monitors, and errors.
 license: MIT
 metadata:
-  version: "1.0.0"
+  version: "2.0.0"
   source: "https://x.com/poteto/status/2097732320606507506"
-  origin: "pstack Pt.2 — /why (lauren / @poteto)"
+  origin: "pstack Pt.2 — lifted verbatim from lauren / @poteto (light markdown formatting only)"
 ---
 
-# /why — tell me why it is this way
+# /why
 
-Code tells you what happens. It never tells you why someone wrote it that way. Type this:
+> Lifted verbatim from [The Complete Guide to pstack Pt. 2](https://x.com/poteto/status/2097732320606507506). Part of `/teach` — see the `teach` skill for the full section this comes from.
 
-> `/why are we still stuck on an old version of node.js?`
+`/why` investigates motivation and intent. Code tells you what happens. It rarely tells you why someone wrote it that way. When you run `/why`, pstack queries historical evidence across multiple sources in parallel: Git history and PR review comments, Linear tickets, Notion design docs, Slack conversations, Datadog monitors, Sentry errors, code lineage, and analytics warehouse events.
 
-## What the agent does
-
-Searches these in parallel and cites what it finds — with links, not vibes:
-
-- git history and blame, PR review comments
-- tickets (Linear/Jira), design docs (Notion, etc.)
-- Slack conversations, Datadog monitors, Sentry errors, analytics events
-
-## Good vs bad
-
-Good: "Pinned in PR #1234 (link) because…; Slack thread (link) shows…"
-Bad: a plausible story with no links. Reject it.
-
-One honest answer is always allowed: **"no record found."** That beats an invented motive — and tells you the decision is now yours to make deliberately.
+`/why are we still stuck an old version of node.js?`
