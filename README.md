@@ -16,11 +16,11 @@ Curated SDLC subset of the upstream pstack plugin — 16 skills vendored unchang
 
 | Skill | Description |
 |-------|-------------|
-| [how](./pstack/how/) · [why](./pstack/why/) · [teach](./pstack/teach/) · [recall](./pstack/recall/) | Research — how it works, why it's this way, plain explanations, resume context |
-| [architect](./pstack/architect/) · [arena](./pstack/arena/) · [figure-it-out](./pstack/figure-it-out/) | Design — sketch before code, parallel candidates, large migrations |
-| [create-verification-skill](./pstack/create-verification-skill/) · [maintain-verification-skill](./pstack/maintain-verification-skill/) · [swarm](./pstack/swarm/) | Verify — project-local driver skills, audits, parallel workers |
-| [interrogate](./pstack/interrogate/) · [blast-radius](./pstack/blast-radius/) · [tdd](./pstack/tdd/) · [show-me-your-work](./pstack/show-me-your-work/) | Review gates — adversarial review, impact analysis, TDD, decision trails |
-| [technical-writing](./pstack/technical-writing/) · [unslop](./pstack/unslop/) | Docs — Diátaxis standard, de-slop prose |
+| [research/how](./pstack/research/how/) · [research/why](./pstack/research/why/) · [research/teach](./pstack/research/teach/) · [research/recall](./pstack/research/recall/) | Research — how it works, why it's this way, plain explanations, resume context |
+| [design/architect](./pstack/design/architect/) · [design/arena](./pstack/design/arena/) · [design/figure-it-out](./pstack/design/figure-it-out/) | Design — sketch before code, parallel candidates, large migrations |
+| [verify/create-verification-skill](./pstack/verify/create-verification-skill/) · [verify/maintain-verification-skill](./pstack/verify/maintain-verification-skill/) · [verify/swarm](./pstack/verify/swarm/) | Verify — project-local driver skills, audits, parallel workers |
+| [review/interrogate](./pstack/review/interrogate/) · [review/blast-radius](./pstack/review/blast-radius/) · [review/tdd](./pstack/review/tdd/) · [review/show-me-your-work](./pstack/review/show-me-your-work/) | Review gates — adversarial review, impact analysis, TDD, decision trails |
+| [docs/technical-writing](./pstack/docs/technical-writing/) · [docs/unslop](./pstack/docs/unslop/) | Docs — Diátaxis standard, de-slop prose |
 
 Plus [`pstack/SDLC-GIST.md`](./pstack/SDLC-GIST.md) — takeaway notes from the Pt.1/Pt.2 posts.
 
@@ -57,12 +57,12 @@ skills/                          # repo root
 ├── visual-docs/                 # standalone skill
 ├── design-de-slop/              # anti-slop design workflow (constraints → variants → subtraction)
 ├── copilot-optimize/            # Copilot cost/quality optimizer
-├── pstack/                      # curated pstack SDLC subset (16 skills vendored unchanged)
-│   ├── how/ why/ teach/ recall/            # research
-│   ├── architect/ arena/ figure-it-out/    # design
-│   ├── create-verification-skill/ maintain-verification-skill/ swarm/  # verify
-│   ├── interrogate/ blast-radius/ tdd/ show-me-your-work/  # review gates
-│   ├── technical-writing/ unslop/           # docs
+├── pstack/                      # curated pstack SDLC subset (16 skills, unchanged)
+│   ├── research/how|why|teach|recall/
+│   ├── design/architect|arena|figure-it-out/
+│   ├── verify/create-verification-skill|maintain-verification-skill|swarm/
+│   ├── review/interrogate|blast-radius|tdd|show-me-your-work/
+│   ├── docs/technical-writing|unslop/
 │   └── SDLC-GIST.md                        # takeaway notes
 └── compound-engineering/        # EveryInc source — 6 skills segregated by origin
     ├── ce-brainstorm/
