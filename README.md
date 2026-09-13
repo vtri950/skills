@@ -10,21 +10,11 @@ A collection of skills for AI coding assistants — each skill teaches an assist
 | [design-de-slop](./design-de-slop/) | De-slop AI-generated design — constraints-first, subtractive review, variant exploration for landing pages/apps/TUIs |
 | [copilot-optimize](./copilot-optimize/) | Optimize any GitHub Copilot setup: stable prefix, prompt audit, cheap-first routing |
 
-### pstack SDLC (`pstack/`)
+### pstack (`pstack/`)
 
-Source: lauren ([@poteto](https://x.com/poteto)) — [Complete Guide to pstack Pt.1](https://x.com/poteto/article/2094457600259842065) + [Pt.2](https://x.com/poteto/status/2097732320606507506) (MIT, distilled — tool-agnostic, no pstack dependency)
+Not vendored — the real plugin lives at `../plugins/pstack` (`how`, `why`, `teach`, `recall`, `architect`, `technical-writing`, `unslop`, `swarm`, `create-verification-skill`, `maintain-verification-skill`, `poteto-mode`, principles, agents, automations). See `pstack/README.md`.
 
-| Skill | Description |
-|-------|-------------|
-| [how](./pstack/how/) | Trace how something works at runtime — real execution path with file:line, not guesses |
-| [why](./pstack/why/) | Find why the code is this way — cited history (git, PRs, tickets, Slack, monitors), never invented motives |
-| [teach](./pstack/teach/) | Understanding check — agent restates the problem or explains tradeoffs in plain english before/after code |
-| [recall](./pstack/recall/) | Pull past transcripts into this chat so fresh agents don't rebuild context from zero |
-| [verify](./pstack/verify/) | Prove it runs — driver CLI + feature map, every change verified with video/screenshots/traces |
-| [technical-writing](./pstack/technical-writing/) | One doc, one job — Diátaxis split (tutorial/how-to/reference/explanation), README-first |
-| [architect](./pstack/architect/) | Design with evidence — ground, sketch candidates, cross-judge, prototype, scrap without mercy |
-
-Plus [`pstack/SDLC-GIST.md`](./pstack/SDLC-GIST.md) — judgments + workflow prompts worth keeping outside skills.
+What stays here: [`pstack/SDLC-GIST.md`](./pstack/SDLC-GIST.md) — distilled takeaway notes (judgments + prompts) from lauren's ([@poteto](https://x.com/poteto)) [Pt.1](https://x.com/poteto/article/2094457600259842065) + [Pt.2](https://x.com/poteto/status/2097732320606507506) posts. Notes, not skills.
 
 ### Compound Engineering (`compound-engineering/`)
 
@@ -59,9 +49,7 @@ skills/                          # repo root
 ├── visual-docs/                 # standalone skill
 ├── design-de-slop/              # anti-slop design workflow (constraints → variants → subtraction)
 ├── copilot-optimize/            # Copilot cost/quality optimizer
-├── pstack/                      # poteto source — 7 SDLC skills + SDLC-GIST.md
-│   ├── how/ why/ teach/ recall/
-│   ├── verify/ technical-writing/ architect/
+├── pstack/                      # pointer to ../plugins/pstack + SDLC-GIST.md (notes only)
 └── compound-engineering/        # EveryInc source — 6 skills segregated by origin
     ├── ce-brainstorm/
     ├── ce-plan/
@@ -76,8 +64,6 @@ Add future sources as sibling dirs (e.g. `acme-corp/`, `my-skills/`) to keep ori
 ## Attribution
 
 `compound-engineering/*` (`ce-brainstorm`, `ce-plan`, `ce-work`, `ce-compound`, `ce-code-review`, `ce-debug`) are sourced from [EveryInc/compound-engineering-plugin](https://github.com/EveryInc/compound-engineering-plugin) (MIT, © Every Inc.) at `v3.24.0`. Original `SKILL.md` and `references/` are preserved unchanged under `compound-engineering/`.
-
-`pstack/*` (`how`, `why`, `teach`, `recall`, `verify`, `technical-writing`, `architect`) are lifted verbatim from lauren's ([@poteto](https://x.com/poteto)) [Complete Guide to pstack Pt.1](https://x.com/poteto/article/2094457600259842065) + [Pt.2](https://x.com/poteto/status/2097732320606507506) — author's own words and prompts, pstack-specific commands kept as written, light markdown formatting only (original figures noted inline); see `pstack/SDLC-GIST.md` for separate distilled notes.
 
 ## How these skills compound
 
