@@ -10,6 +10,18 @@ A collection of skills for AI coding assistants — each skill teaches an assist
 | [design-de-slop](./design-de-slop/) | De-slop AI-generated design — constraints-first, subtractive review, variant exploration for landing pages/apps/TUIs |
 | [copilot-optimize](./copilot-optimize/) | Optimize any GitHub Copilot setup: stable prefix, prompt audit, cheap-first routing |
 
+### pstack SDLC (`pstack/`)
+
+Source: lauren ([@poteto](https://x.com/poteto)) — [Complete Guide to pstack Pt.1](https://x.com/poteto/article/2094457600259842065) + [Pt.2](https://x.com/poteto/status/2097732320606507506) (MIT, distilled — tool-agnostic, no pstack dependency)
+
+| Skill | Description |
+|-------|-------------|
+| [verify-app](./pstack/verify-app/) | Agent-operable verification loop — control CLI that drives the app like a user + Feature Map, maintained like infra |
+| [ground-research](./pstack/ground-research/) | Ground before building — restate in own words, split how (mechanics) from why (history/intent), recall past transcripts |
+| [prototype-architect](./pstack/prototype-architect/) | Plan through code — README/tutorial-first, parallel prototypes with proof, cross-model architect arena, verifiable plans |
+
+Plus [`pstack/SDLC-GIST.md`](./pstack/SDLC-GIST.md) — judgments + workflow prompts worth keeping outside skills.
+
 ### Compound Engineering (`compound-engineering/`)
 
 Source: [EveryInc/compound-engineering-plugin](https://github.com/EveryInc/compound-engineering-plugin) `v3.24.0` (MIT)
@@ -43,6 +55,10 @@ skills/                          # repo root
 ├── visual-docs/                 # standalone skill
 ├── design-de-slop/              # anti-slop design workflow (constraints → variants → subtraction)
 ├── copilot-optimize/            # Copilot cost/quality optimizer
+├── pstack/                      # poteto source — 3 SDLC skills + SDLC-GIST.md
+│   ├── verify-app/
+│   ├── ground-research/
+│   └── prototype-architect/
 └── compound-engineering/        # EveryInc source — 6 skills segregated by origin
     ├── ce-brainstorm/
     ├── ce-plan/
@@ -57,6 +73,8 @@ Add future sources as sibling dirs (e.g. `acme-corp/`, `my-skills/`) to keep ori
 ## Attribution
 
 `compound-engineering/*` (`ce-brainstorm`, `ce-plan`, `ce-work`, `ce-compound`, `ce-code-review`, `ce-debug`) are sourced from [EveryInc/compound-engineering-plugin](https://github.com/EveryInc/compound-engineering-plugin) (MIT, © Every Inc.) at `v3.24.0`. Original `SKILL.md` and `references/` are preserved unchanged under `compound-engineering/`.
+
+`pstack/*` (`verify-app`, `ground-research`, `prototype-architect`) are distilled from lauren's ([@poteto](https://x.com/poteto)) [Complete Guide to pstack Pt.1](https://x.com/poteto/article/2094457600259842065) + [Pt.2](https://x.com/poteto/status/2097732320606507506). Rewritten tool-agnostic (no pstack/`/poteto-mode` dependency); see `pstack/SDLC-GIST.md` for non-skill judgments.
 
 ## How these skills compound
 
