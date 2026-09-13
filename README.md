@@ -16,9 +16,13 @@ Source: lauren ([@poteto](https://x.com/poteto)) — [Complete Guide to pstack P
 
 | Skill | Description |
 |-------|-------------|
-| [verify-app](./pstack/verify-app/) | Agent-operable verification loop — control CLI that drives the app like a user + Feature Map, maintained like infra |
-| [ground-research](./pstack/ground-research/) | Ground before building — restate in own words, split how (mechanics) from why (history/intent), recall past transcripts |
-| [prototype-architect](./pstack/prototype-architect/) | Plan through code — README/tutorial-first, parallel prototypes with proof, cross-model architect arena, verifiable plans |
+| [how](./pstack/how/) | Trace how something works at runtime — real execution path with file:line, not guesses |
+| [why](./pstack/why/) | Find why the code is this way — cited history (git, PRs, tickets, Slack, monitors), never invented motives |
+| [teach](./pstack/teach/) | Understanding check — agent restates the problem or explains tradeoffs in plain english before/after code |
+| [recall](./pstack/recall/) | Pull past transcripts into this chat so fresh agents don't rebuild context from zero |
+| [verify](./pstack/verify/) | Prove it runs — driver CLI + feature map, every change verified with video/screenshots/traces |
+| [technical-writing](./pstack/technical-writing/) | One doc, one job — Diátaxis split (tutorial/how-to/reference/explanation), README-first |
+| [architect](./pstack/architect/) | Design with evidence — ground, sketch candidates, cross-judge, prototype, scrap without mercy |
 
 Plus [`pstack/SDLC-GIST.md`](./pstack/SDLC-GIST.md) — judgments + workflow prompts worth keeping outside skills.
 
@@ -55,10 +59,9 @@ skills/                          # repo root
 ├── visual-docs/                 # standalone skill
 ├── design-de-slop/              # anti-slop design workflow (constraints → variants → subtraction)
 ├── copilot-optimize/            # Copilot cost/quality optimizer
-├── pstack/                      # poteto source — 3 SDLC skills + SDLC-GIST.md
-│   ├── verify-app/
-│   ├── ground-research/
-│   └── prototype-architect/
+├── pstack/                      # poteto source — 7 SDLC skills + SDLC-GIST.md
+│   ├── how/ why/ teach/ recall/
+│   ├── verify/ technical-writing/ architect/
 └── compound-engineering/        # EveryInc source — 6 skills segregated by origin
     ├── ce-brainstorm/
     ├── ce-plan/
@@ -74,7 +77,7 @@ Add future sources as sibling dirs (e.g. `acme-corp/`, `my-skills/`) to keep ori
 
 `compound-engineering/*` (`ce-brainstorm`, `ce-plan`, `ce-work`, `ce-compound`, `ce-code-review`, `ce-debug`) are sourced from [EveryInc/compound-engineering-plugin](https://github.com/EveryInc/compound-engineering-plugin) (MIT, © Every Inc.) at `v3.24.0`. Original `SKILL.md` and `references/` are preserved unchanged under `compound-engineering/`.
 
-`pstack/*` (`verify-app`, `ground-research`, `prototype-architect`) are distilled from lauren's ([@poteto](https://x.com/poteto)) [Complete Guide to pstack Pt.1](https://x.com/poteto/article/2094457600259842065) + [Pt.2](https://x.com/poteto/status/2097732320606507506). Rewritten tool-agnostic (no pstack/`/poteto-mode` dependency); see `pstack/SDLC-GIST.md` for non-skill judgments.
+`pstack/*` (`how`, `why`, `teach`, `recall`, `verify`, `technical-writing`, `architect`) mirror lauren's ([@poteto](https://x.com/poteto)) [Complete Guide to pstack Pt.1](https://x.com/poteto/article/2094457600259842065) + [Pt.2](https://x.com/poteto/status/2097732320606507506) 1:1 — same names, same "type this" prompts, rewritten tool-agnostic (no pstack/`/poteto-mode` dependency); see `pstack/SDLC-GIST.md` for non-skill judgments.
 
 ## How these skills compound
 
