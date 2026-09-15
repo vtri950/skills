@@ -10,6 +10,7 @@ A collection of skills for AI coding assistants — each skill teaches an assist
 | [design-de-slop](./design-de-slop/) | De-slop AI-generated design — constraints-first, subtractive review, variant exploration for landing pages/apps/TUIs |
 | [copilot-optimize](./copilot-optimize/) | Optimize any GitHub Copilot setup: stable prefix, prompt audit, cheap-first routing |
 | [x-bookmarks](./x-bookmarks/) | Distill X bookmarks by taste — fetch, triage, route to gist/skill/tool, generalize across harnesses |
+| [session-memory](./session-memory/) | Recall previous sessions via claude-mem when installed, else `ce-compound` docs |
 
 ### pstack SDLC (`pstack/`)
 
@@ -59,6 +60,7 @@ skills/                          # repo root
 ├── design-de-slop/              # anti-slop design workflow (constraints → variants → subtraction)
 ├── copilot-optimize/            # Copilot cost/quality optimizer
 ├── x-bookmarks/                 # X bookmarks → collection by taste (fetch → triage → route → generalize)
+├── session-memory/              # standalone skill (adapter over optional claude-mem service)
 ├── pstack/                      # curated pstack SDLC subset (16 skills, unchanged)
 │   ├── research/how|why|teach|recall/
 │   ├── design/architect|arena|figure-it-out/
@@ -82,6 +84,8 @@ Add future sources as sibling dirs (e.g. `acme-corp/`, `my-skills/`) to keep ori
 `compound-engineering/*` (`ce-brainstorm`, `ce-plan`, `ce-work`, `ce-compound`, `ce-code-review`, `ce-debug`) are sourced from [EveryInc/compound-engineering-plugin](https://github.com/EveryInc/compound-engineering-plugin) (MIT, © Every Inc.) at `v3.24.0`. Original `SKILL.md` and `references/` are preserved unchanged under `compound-engineering/`.
 
 `pstack/*` (16 SDLC skills) are vendored from the upstream pstack plugin copy in this workspace at `../plugins/pstack/skills/`. `SKILL.md`, `references/`, and `scripts/` are preserved unchanged under `pstack/`. Excluded upstream: `poteto-mode`, all `principle-*`, `bro`, `no-comments`, `reflect`, `automate-me`, `setup-pstack`, `typescript-best-practices`. `pstack/SDLC-GIST.md` is original notes on lauren's ([@poteto](https://x.com/poteto)) [Pt.1](https://x.com/poteto/article/2094457600259842065) + [Pt.2](https://x.com/poteto/status/2097732320606507506) posts.
+
+`session-memory/SKILL.md` is original to this repo. Its layered query workflow (search → timeline → fetch → rare raw-I/O) is distilled from `claude-mem`'s `mem-search` skill ([thedotmack/claude-mem](https://github.com/thedotmack/claude-mem), Apache-2.0). No upstream runtime is vendored — see the Decision record in the skill.
 
 ## How these skills compound
 
