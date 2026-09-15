@@ -9,6 +9,7 @@ A collection of skills for AI coding assistants — each skill teaches an assist
 | [visual-docs](./visual-docs/) | Author and convert documentation to rich MDX files viewable locally with [planview](https://github.com/vtri950/planview) |
 | [design-de-slop](./design-de-slop/) | De-slop AI-generated design — constraints-first, subtractive review, variant exploration for landing pages/apps/TUIs |
 | [copilot-optimize](./copilot-optimize/) | Optimize any GitHub Copilot setup: stable prefix, prompt audit, cheap-first routing |
+| [x-bookmarks](./x-bookmarks/) | Distill X bookmarks by taste — fetch, triage, route to gist/skill/tool, generalize across harnesses |
 
 ### pstack SDLC (`pstack/`)
 
@@ -57,6 +58,7 @@ skills/                          # repo root
 ├── visual-docs/                 # standalone skill
 ├── design-de-slop/              # anti-slop design workflow (constraints → variants → subtraction)
 ├── copilot-optimize/            # Copilot cost/quality optimizer
+├── x-bookmarks/                 # X bookmarks → collection by taste (fetch → triage → route → generalize)
 ├── pstack/                      # curated pstack SDLC subset (16 skills, unchanged)
 │   ├── research/how|why|teach|recall/
 │   ├── design/architect|arena|figure-it-out/
