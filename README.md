@@ -10,6 +10,7 @@ A collection of skills for AI coding assistants — each skill teaches an assist
 | [design-de-slop](./design-de-slop/) | De-slop AI-generated design — constraints-first, subtractive review, variant exploration for landing pages/apps/TUIs |
 | [copilot-optimize](./copilot-optimize/) | Optimize any GitHub Copilot setup: stable prefix, prompt audit, cheap-first routing |
 | [x-bookmarks](./x-bookmarks/) | Distill X bookmarks by taste — fetch, triage, route to gist/skill/tool, generalize across harnesses |
+| [retro-gate](./retro-gate/) | Turn repeat review findings into deterministic checks — lint, hook, or CI gate plus handoff/schedule invariants |
 
 ### pstack SDLC (`pstack/`)
 
@@ -59,6 +60,7 @@ skills/                          # repo root
 ├── design-de-slop/              # anti-slop design workflow (constraints → variants → subtraction)
 ├── copilot-optimize/            # Copilot cost/quality optimizer
 ├── x-bookmarks/                 # X bookmarks → collection by taste (fetch → triage → route → generalize)
+├── retro-gate/                  # retro findings → deterministic gates (lint → hook → CI) + handoff/schedule invariants
 ├── pstack/                      # curated pstack SDLC subset (16 skills, unchanged)
 │   ├── research/how|why|teach|recall/
 │   ├── design/architect|arena|figure-it-out/
