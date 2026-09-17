@@ -1,4 +1,4 @@
-# humanlayer — curated review-visualization collection
+# review — curated review-visualization collection
 
 Review-focused subset of the upstream skills collection, vendored unchanged
 (`SKILL.md`, `references/`, `agents/` preserved as-is).
