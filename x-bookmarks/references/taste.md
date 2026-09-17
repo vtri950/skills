@@ -22,6 +22,6 @@ Kept examples: `make-interfaces-feel-better` (post-frontend polish, zero-deps), 
 - **S7 pattern-only:** `loopy` (iterate→measure→keep-if-better→stop) → steal the loop into `ce-debug`/`ce-work`, don't install catalog.
 - **S8 hype:** star counts (`73k`, `224k`) as selection signal. Ignore.
 
-## Wording hygiene
+## Wording hygiene (hard rule, no exceptions)
 
-Default to neutral, agent-agnostic language in code/docs/PRs: no author names, handles, or X/platform links. Terms like `review-noise`, `schema-first`, `plan-first` over attributions. Keep the `Source:` link only in `SKILL.md` frontmatter/source section and gist headers.
+Shipped artifacts must never mention platform links or refs — no post/status URLs, no handles, no author names, no "bookmark batch" / "thread" / "tweet" provenance. This covers `SKILL.md` (including frontmatter and source sections), `references/`, README rows, PR bodies, and gists. Terms like `review-noise`, `schema-first`, `plan-first` over attributions. Non-platform source links (articles, repos, docs) may stay in frontmatter `metadata.source` only. Provenance beyond that lives in working notes, never in the artifact. Verify with grep for `x.com`, `twitter.com`, `@handle`, `bookmark`, `thread`, `tweet` before handoff — any hit outside this skill's own pipeline docs is a blocker.

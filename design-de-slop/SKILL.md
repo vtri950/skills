@@ -5,7 +5,6 @@ description: |
 license: MIT
 metadata:
   version: "1.0.0"
-  source: "https://x.com/reactiverobot/status/2092638003789439075"
 ---
 
 # Design De-Slop: How to Design with AI and Not Hate It
@@ -117,4 +116,4 @@ Before handing off any UI:
 
 ## Source
 
-Distilled from Matt Dailey (@reactiverobot) — "How I Design with AI. As an engineer who is not a designer and hates slop." (Aug 26 2026) — https://x.com/reactiverobot/status/2092638003789439075 — 7 moves + Christopher Alexander's *Notes on the Synthesis of Form*.
+Distilled from a design-with-AI workflow (7 moves) plus *Notes on the Synthesis of Form*.

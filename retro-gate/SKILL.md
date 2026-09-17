@@ -5,7 +5,6 @@ description: |
 license: MIT
 metadata:
   version: "1.0.0"
-  source: "https://x.com/mattpocockuk/status/2099859946053533933, https://x.com/dedene/status/2100165534268453203"
 ---
 
 # Retro-Gate: Make the Error Impossible Next Time
@@ -83,4 +82,4 @@ Measure: runs that hit the gate, false-positive rate, time added. Keep the gate 
 
 ## Source
 
-Distilled from bookmark batch 2026-09-16: retro-to-deterministic-checks thread + multi-agent ops notes (9h live-build observations: 5-min supervision P0, verification driver + feature map, schedule-audit math). Full URLs in frontmatter `metadata.source`.
+Distilled from a review-to-deterministic-checks loop plus multi-agent field notes (supervision cadence, verification driver plus feature map, schedule-audit math).
