@@ -5,8 +5,8 @@
 ```md
 | URL | verdict | artifact | reason |
 |-----|---------|----------|--------|
-| https://x.com/… | keep | skill `foo/` | weekly UI polish pain, tiny, no overlap |
-| https://x.com/… | skip (S1 duplicate) | none | overlaps ce-plan/work |
+| <source-url> | keep | skill `foo/` | weekly UI polish pain, tiny, no overlap |
+| <source-url> | skip (S1 duplicate) | none | overlaps ce-plan/work |
 ```
 
 ## Gist skeleton (`<topic>.md`, 1 file)
