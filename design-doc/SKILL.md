@@ -5,7 +5,7 @@ description: |
 license: MIT
 metadata:
   version: "1.0.0"
-  source: "https://refactoringenglish.com/excerpts/write-an-effective-design-doc, https://x.com/rseroter/status/2100273476045050338"
+  source: "https://refactoringenglish.com/excerpts/write-an-effective-design-doc"
 ---
 
 # Design Doc: Scope It, Draft It, Drive It Through Review
@@ -90,4 +90,4 @@ Convert every adjective goal into an SLO: uptime/availability %, latency percent
 
 ## Source
 
-Distilled from bookmark batch 2026-09-16: effective-design-doc excerpt (gate questions, penalty filter, section catalog, signoff discipline) plus thread notes (alternatives section rivals the decision; purpose plus trade-offs plus failure modes). Full URLs in frontmatter `metadata.source`.
+Distilled from a design-doc writing guide (write-gate questions, penalty filter, section catalog, signoff discipline) plus multi-agent field notes (alternatives section rivals the decision; purpose plus trade-offs plus failure modes). Full URL in frontmatter `metadata.source`.
