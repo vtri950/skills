@@ -8,3 +8,4 @@ Review-focused subset of the upstream skills collection, vendored unchanged
 | Skill | Use when |
 |-------|----------|
 | [show-me](./show-me/) | "show this visually" — smallest diagram or code-shape sketch for the current topic |
+| [visual-pr](./visual-pr/) | "describe this PR" — concise PR description with visual change outline for reviewers |
