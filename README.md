@@ -11,6 +11,7 @@ A collection of skills for AI coding assistants — each skill teaches an assist
 | [copilot-optimize](./copilot-optimize/) | Optimize any GitHub Copilot setup: stable prefix, prompt audit, cheap-first routing |
 | [x-bookmarks](./x-bookmarks/) | Distill X bookmarks by taste — fetch, triage, route to gist/skill/tool, generalize across harnesses |
 | [retro-gate](./retro-gate/) | Turn repeat review findings into deterministic checks — lint, hook, or CI gate plus handoff/schedule invariants |
+| [design-doc](./design-doc/) | Scope, draft, and drive review of software design docs — write-gate, penalty filter, section checklist, signoff trail |
 
 ### pstack SDLC (`pstack/`)
 
@@ -61,6 +62,7 @@ skills/                          # repo root
 ├── copilot-optimize/            # Copilot cost/quality optimizer
 ├── x-bookmarks/                 # X bookmarks → collection by taste (fetch → triage → route → generalize)
 ├── retro-gate/                  # retro findings → deterministic gates (lint → hook → CI) + handoff/schedule invariants
+├── design-doc/                  # design docs — write-gate → size → penalty filter → subset draft → SLOs → signoff
 ├── pstack/                      # curated pstack SDLC subset (16 skills, unchanged)
 │   ├── research/how|why|teach|recall/
 │   ├── design/architect|arena|figure-it-out/
