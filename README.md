@@ -42,11 +42,12 @@ Source: [EveryInc/compound-engineering-plugin](https://github.com/EveryInc/compo
 
 ### Review visualization (`humanlayer/`)
 
-Curated review-visualization subset of the upstream skills collection — 1 skill vendored unchanged (see `humanlayer/README.md` for the index).
+Curated review-visualization subset of the upstream skills collection — 2 skills vendored unchanged (see `humanlayer/README.md` for the index).
 
 | Skill | Description |
 |-------|-------------|
 | [show-me](./humanlayer/show-me/) | Explain the current topic visually — smallest diagram or code-shape sketch (pseudocode, call tree, component tree, file tree, mermaid, `diff`) |
+| [visual-pr](./humanlayer/visual-pr/) | Describe a pull request — one-sentence why, 1-3 review notes, compact visual change outline |
 
 ## How to install a skill
 
@@ -86,7 +87,8 @@ skills/                          # repo root
     ├── ce-code-review/
     └── ce-debug/
 └── humanlayer/                 # review-visualization source — skills segregated by origin
-    └── show-me/                # smallest visual for the current topic (diagrams, code-shape sketches)
+    ├── show-me/                # smallest visual for the current topic (diagrams, code-shape sketches)
+    └── visual-pr/              # concise PR description with visual change outline
 ```
 
 Add future sources as sibling dirs (e.g. `acme-corp/`, `my-skills/`) to keep origins segregated.
@@ -98,6 +100,8 @@ Add future sources as sibling dirs (e.g. `acme-corp/`, `my-skills/`) to keep ori
 `pstack/*` (16 SDLC skills) are vendored from the upstream pstack plugin copy in this workspace at `../plugins/pstack/skills/`. `SKILL.md`, `references/`, and `scripts/` are preserved unchanged under `pstack/`. Excluded upstream: `poteto-mode`, all `principle-*`, `bro`, `no-comments`, `reflect`, `automate-me`, `setup-pstack`, `typescript-best-practices`. `pstack/SDLC-GIST.md` is original notes on a two-part SDLC series on agent workflows.
 
 `humanlayer/show-me` is sourced from the upstream skills collection (MIT) at `plugins/show-me/skills/show-me`. Original `SKILL.md` and `agents/` are preserved unchanged under `humanlayer/`.
+
+`humanlayer/visual-pr` is sourced from the upstream skills collection (MIT) at `plugins/visual-pr/skills/visual-pr`. Original `SKILL.md` and `references/` are preserved unchanged under `humanlayer/`.
 
 ## How these skills compound
 
