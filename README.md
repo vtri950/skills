@@ -40,6 +40,14 @@ Source: [EveryInc/compound-engineering-plugin](https://github.com/EveryInc/compo
 | [ce-code-review](./compound-engineering/ce-code-review/) | Structured multi-agent review (personas, confidence-gated findings) against the plan and `CODING_STANDARDS.md`. Report-only. |
 | [ce-debug](./compound-engineering/ce-debug/) | Diagnosis loop for bugs/failing behavior — causal chain, predictions, then optional fix and PR handoff. |
 
+### Review visualization (`review/`)
+
+Curated review-visualization subset of the upstream skills collection — 1 skill vendored unchanged (see `review/README.md` for the index).
+
+| Skill | Description |
+|-------|-------------|
+| [show-me](./review/show-me/) | Explain the current topic visually — smallest diagram or code-shape sketch (pseudocode, call tree, component tree, file tree, mermaid, `diff`) |
+
 ## How to install a skill
 
 Copy the skill directory into your assistant's skills folder and reference it in your configuration. For example:
@@ -77,6 +85,8 @@ skills/                          # repo root
     ├── ce-compound/
     ├── ce-code-review/
     └── ce-debug/
+└── review/                      # review-visualization skills, segregated by purpose
+    └── show-me/                # smallest visual for the current topic (diagrams, code-shape sketches)
 ```
 
 Add future sources as sibling dirs (e.g. `acme-corp/`, `my-skills/`) to keep origins segregated.
@@ -86,6 +96,8 @@ Add future sources as sibling dirs (e.g. `acme-corp/`, `my-skills/`) to keep ori
 `compound-engineering/*` (`ce-brainstorm`, `ce-plan`, `ce-work`, `ce-compound`, `ce-code-review`, `ce-debug`) are sourced from [EveryInc/compound-engineering-plugin](https://github.com/EveryInc/compound-engineering-plugin) (MIT, © Every Inc.) at `v3.24.0`. Original `SKILL.md` and `references/` are preserved unchanged under `compound-engineering/`.
 
 `pstack/*` (16 SDLC skills) are vendored from the upstream pstack plugin copy in this workspace at `../plugins/pstack/skills/`. `SKILL.md`, `references/`, and `scripts/` are preserved unchanged under `pstack/`. Excluded upstream: `poteto-mode`, all `principle-*`, `bro`, `no-comments`, `reflect`, `automate-me`, `setup-pstack`, `typescript-best-practices`. `pstack/SDLC-GIST.md` is original notes on a two-part SDLC series on agent workflows.
+
+`review/show-me` is sourced from the upstream skills collection (MIT) at `plugins/show-me/skills/show-me`. Original `SKILL.md` and `agents/` are preserved unchanged under `review/`.
 
 ## How these skills compound
 
